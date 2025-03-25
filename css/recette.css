@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    display:flex ;
+    justify-content: space-between;
+    nav {
+        display: flex;              
+        justify-content:center; 
+       
+        padding: 0;
+       
+        list-style: none;  
+        width: 50%;  
+        margin: auto;   
+
+    }
+    
+     li {
+        display: inline;   margin: 16px;         
+    }
+    
+     li a {
+        text-decoration: none;      
+        padding: 10px 15px; 
+        color: black;        
+                    
+    }
+}
+main{
+    img{
+        width: 70%; 
+        margin: auto;
+        object-fit: cover;
+        
+    }
+}
