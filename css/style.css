@@ -1,3 +1,11 @@
+:root{
+
+    --primary-color:#E67F22;
+    --secondary-color:#f9f9f9;
+    --bolder : 700;
+    font-size:16px ;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -36,9 +44,9 @@ header{
         top: 40%;
        right: 17%;
        color: #F3D36B;
-       border: 2px solid #f9f9f9;;
+       border: 2px solid var(--secondary-color);
        border-radius: 50%;
-       background-color: #f9f9f9;
+       background-color: var(--secondary-color) ;
      
        
        
@@ -47,6 +55,10 @@ header{
     nav{
         display: none;
         list-style: none;
+    }
+    span{
+        font-weight: bolder;
+        margin-left: 20px;
     }
 
 
@@ -73,12 +85,12 @@ header a{
 
 }
 .button{ width: 100%;
-    background-color: #E67F22;
+    background-color: var(--primary-color);
 
 }
 
 .section2, .section3{
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
 
     border: 1px solid white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -106,9 +118,9 @@ figcaption{margin-block: 20px;
         margin-bottom: 5px;
     }
     .orange{
-        background-color: #E67F22;
-        color: #f9f9f9;
-        border: 2px #E67F22 solid;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: 2px var(--primary-color) solid;
         border-radius: 30%;
         padding-inline: 10px;
         margin:5px
@@ -116,7 +128,7 @@ figcaption{margin-block: 20px;
     }
     .vert{
         background-color:#2BCD70 ;
-        color: #f9f9f9;
+        color: var(--secondary-color);
         border-radius: 30%;
         padding-inline: 10px;
         margin: 5px;
@@ -127,7 +139,7 @@ figcaption{margin-block: 20px;
 }
 .bleu {
     background-color: #3498D8;
-    color: #f9f9f9;
+    color: var(--secondary-color);
         border-radius: 30%;
         padding-inline: 10px;
         margin: 5px;
@@ -141,10 +153,10 @@ figcaption{margin-block: 20px;
     top: 20px;
     width: 50px;  
     height: 50px; 
-    border: 2px solid  #f9f9f9;
+    border: 2px solid  var(--secondary-color);
     border-radius: 50%;
     padding: 10px;
-    background-color: #f9f9f9; 
+    background-color: var(--secondary-color); 
 
 }
 
@@ -152,9 +164,9 @@ p{
     width: 80%;
     margin: auto;
     text-align: center;
-    border:2px #E67F22 solid ;
+    border:2px var(--primary-color) solid ;
     margin-block: 10px;
-    background-color: #E67F22;
+    background-color: var(--primary-color);
 
     a{
         color: white;
@@ -167,7 +179,7 @@ p{
 }
 footer{
     background-color: black;
-    color: #f9f9f9;
+    color: var(--secondary-color);
     text-align: center;
     padding: 10px;
 }
@@ -263,7 +275,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         
-        gap: 10px;
+        gap: 1rem;
         width: 70%;
          
 }
