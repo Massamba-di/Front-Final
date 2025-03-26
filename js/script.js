@@ -26,4 +26,31 @@ for(let iconHeart of iconHearts){
     }
     
 })
-}
+};
+
+const moon = document.querySelector(".moon");
+const sun = document.querySelector(".sun");
+
+moon.addEventListener("click", function() {
+    document.body.classList.add("dark-theme"); 
+    localStorage.setItem("theme", "dark"); 
+    moon.style.display = "none";
+    sun.style.display ="block"
+   
+    
+});
+
+
+sun.addEventListener("click", function() {
+    document.body.classList.remove("dark-theme"); 
+    localStorage.setItem("theme", "light");
+  
+        sun.style.display ="none";
+        moon.style.display="block";
+
+   
+        
+    
+
+});
+

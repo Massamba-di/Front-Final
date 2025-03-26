@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page-recette</title>
     <link rel="stylesheet" href="css/recette.css">
+    <script src="js/recette.js" defer></script>
 </head>
 
 <body>
@@ -20,11 +21,25 @@
         </nav>
     </header>
     <main>
-        <div class="image">
-            <img src="assets/image/riz au poisson 3.jpg" alt="riz au poisson">
-        </div>
+        <section>
+            <figure class="plat" data-id="riz au poisson">
+                <img src="assets/image/riz au poisson 3.jpg" alt="riz au poisson">
+    
+                <figcaption>
+                    <h1>Riz au poisson </h1>
+                    <span class="orange">plat</span>
+                    <span class="vert">30mn</span>
+                    <span class="bleu">facile</span>
+                    
+                    <button>ajoutez aux favoris ❤️</button> 
+                          
+                </figcaption>
+            </figure>
+        </section>
+        
 
 
+       
         <section id="Decouverte">
             <h1>
                 Decouverte
@@ -45,6 +60,7 @@
 
 
         </section>
+        
         <div class="first">
             <section id="recette">
                 <h2>La recette</h2>
@@ -119,10 +135,7 @@
 
 
         </div>
-        <div class="button">
-            
-        <button>ajoutez aux favoris</button> 
-        </div>
+       
        
         <section class="second">
             <h2>recette similaire  (Riz à la viande)</h2>
