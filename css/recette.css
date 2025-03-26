@@ -73,7 +73,8 @@ main{
     width: 80%;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px var(--primary-color);
+    box-shadow: 2px 2px 2px 2px var(--secondary-color);
+    color: var(--secondary-color);
     background-color:  var(--primary-color) ;
     padding: 20px;
 
@@ -88,6 +89,7 @@ main{
     width: 80%;
     margin: auto;
     margin-block: 20px;
+    background-color: var(--secondary-color);
     
 }
 
@@ -103,6 +105,7 @@ main{
 }
 .second{
     text-align: center;
+    background-color: var(--secondary-color);
     margin-bottom: 20px;
 }
 

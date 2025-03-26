@@ -1,0 +1,23 @@
+
+ :root{
+
+        --primary-color:#E67F22;
+        --secondary-color:#f9f9f9;
+        --bolder : 700;
+        font-size:16px ;
+    }
+
+    main{
+        text-align: center;
+        h1{
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+            font-weight: var(--bolder);
+        }
+
+        select{
+            color: var(--primary-color);
+
+        }
+    }
+    
