@@ -125,6 +125,9 @@ header a{
 input{
     margin: 15px;
 }
+figure { position: relative;
+
+}
 
 /* Mise en forme des légendes d'images */
 figcaption{
