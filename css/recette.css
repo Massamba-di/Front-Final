@@ -35,6 +35,7 @@ header{
         span{
             font-weight: var(--bolder);
             margin-left: 20px;
+            color: var(--primary-color);
         }
     
     
@@ -137,19 +138,20 @@ header{
         margin-inline: 10px;
 
         margin-bottom: 2rem;
+        p{
+            margin-top: 1rem;
+        }
         li{
             list-style: none;
             line-height: 3rem;
 
-            h1{
-                margin-bottom: x;
-            
-            }
+         
     
         }
-    
+     
        
     }
+  
 
     #preparations{
 
@@ -256,7 +258,38 @@ header{
   
 }
 @media screen and (min-width: 1024px){
+
+    header{
+        position: relative;
+    }
+     .menu {
+        display: flex;              
+        justify-content:center; 
+        align-items: center;
+        padding: 0;
+       
+        list-style: none;  
+        width: 50%;  
+       margin: auto;
+        
+
+    }
     
+     li {
+        display: inline;   
+        background-color: var(--primary-color);    
+        color: var(--secondary-color);     
+    }
+    
+     li a {
+        text-decoration: none;      
+        padding: 10px 15px; 
+        color: black;        
+                    
+    }
+    .burger{
+        display: none;
+    }                                   
     main{
         
   
@@ -286,14 +319,15 @@ header{
         margin-bottom: 20px;
     }
     
-    footer{
+     footer{
         background-color: black;
         color: var(--secondary-color);
         text-align: center;
-        padding: 10px;
+        padding: 10px; 
+     }
     }
+
     }
 
 
-}
 
