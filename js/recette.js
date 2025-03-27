@@ -1,14 +1,22 @@
+// Sélection des éléments des icônes de la lune et du soleil
 const moon = document.querySelector(".moon");
 const sun = document.querySelector(".sun");
 
+// Ajoute un événement au clic sur l'icône de la lune
 moon.addEventListener("click", function() {
+    // Applique la classe 'dark-theme' au body pour activer le thème sombre
     document.body.classList.add("dark-theme"); 
+
+    // Sauvegarde le thème sombre dans le localStorage afin qu'il soit persistant
     localStorage.setItem("theme", "dark"); 
+
+    // Cache l'icône de la lune après son clic
     moon.style.display = "none";
-    sun.style.display ="block"
-   
-    
+
+    // Affiche l'icône du soleil après le clic sur la lune
+    sun.style.display ="block";
 });
+
 
 
 // sun.addEventListener("click", function() {

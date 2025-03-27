@@ -48,14 +48,20 @@
        
     </header>
     <main>
+        <!-- Première section contenant les options de recherche et les filtres -->
         <div class="first">
             <section class="section1">
+                <!-- Champ de texte pour rechercher une recette -->
                 <input type="text"  id="text" placeholder="Rechercher une recette">
+                <!-- Bouton de recherche -->
                 <button class="button">Recherche</button>
             </section>
+    
             <div class="recette">
+                <!-- Section pour les catégories de recettes -->
                 <section class="section2">
                     <h1>Catégorie</h1>
+                    <!-- Liste des catégories avec des cases à cocher -->
                     <article class="check1">
                         <div>
                             <input type="checkbox" name="entrée" id="entrée">
@@ -71,7 +77,8 @@
                         </div>
                     </article>
                 </section>
-            
+    
+                <!-- Section pour le temps de préparation -->
                 <section class="section3">
                     <h2>Temps de préparation</h2>
                     <article class="check2">
@@ -89,7 +96,8 @@
                         </div>
                     </article>
                 </section>
-            
+    
+                <!-- Section pour la difficulté de la recette -->
                 <section class="section3">
                     <h2>Difficulté</h2>
                     <article class="check3">
@@ -108,87 +116,88 @@
                     </article>
                 </section>
             </div>
-            
-
         </div>
-      <div class="second">
-        <section class="sect4">
-            <figure data-categorie="tarte aux pommes">
-                <img src="assets/image/tarte aux pommes ia.webp" alt="tarte aux pommes généré par IA">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                  </svg>
-                <figcaption>
-                    <h3>tarte aux pommes</h3>
-                    <span class="orange">dessert</span>
-                    <span class="vert">60mn</span>
-                    <span class="bleu">facile</span>
-                    <button>Voir la recette</button>
-                </figcaption>
-            </figure> 
-            <figure data-categorie="ratatouille">
-                <img src="assets/image/ratatouilles ia.webp" alt="ratatouille généré par IA">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                  </svg>
-                <figcaption>
-                    <h3>ratatouille provençale</h3>
-                    <span class="orange">entrée</span>
-                    <span class="vert">45mn</span>
-                    <span  class="bleu">moyen</span>
-                    <button>Voir la recette</button>
-                </figcaption>
-            </figure>
-             <figure data-categorie="riz au poisson">
-                <img src="assets/image/riz au poisson 3.jpg" alt="riz au poisson">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                  </svg>
-                <figcaption>
-                    <h3>Riz au poisson</h3>
-                    <span class="orange">plat</span>
-                    <span class="vert">30mn</span>
-                    <span class="bleu">facile</span>
-                  <button>Voir la recette</button>
-                </figcaption>
-            </figure>
-        </section>
-
-      </div>
-
-      
-
-
-
+    
+        <!-- Deuxième section contenant les recettes affichées -->
+        <div class="second">
+            <section class="sect4">
+                <!-- Première recette avec une catégorie, une image, et un bouton "Voir la recette" -->
+                <figure data-categorie="tarte aux pommes">
+                    <img src="assets/image/tarte aux pommes ia.webp" alt="tarte aux pommes généré par IA">
+                    <!-- Icône de favori -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                    <figcaption>
+                        <h3>tarte aux pommes</h3>
+                        <!-- Informations sur la recette -->
+                        <span class="orange">dessert</span>
+                        <span class="vert">60mn</span>
+                        <span class="bleu">facile</span>
+                        <!-- Bouton pour voir la recette -->
+                        <button>Voir la recette</button>
+                    </figcaption>
+                </figure>
+    
+                <!-- Deuxième recette -->
+                <figure data-categorie="ratatouille">
+                    <img src="assets/image/ratatouilles ia.webp" alt="ratatouille généré par IA">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                    <figcaption>
+                        <h3>ratatouille provençale</h3>
+                        <span class="orange">entrée</span>
+                        <span class="vert">45mn</span>
+                        <span class="bleu">moyen</span>
+                        <button>Voir la recette</button>
+                    </figcaption>
+                </figure>
+    
+                <!-- Troisième recette -->
+                <figure data-categorie="riz au poisson">
+                    <img src="assets/image/riz au poisson 3.jpg" alt="riz au poisson">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                    <figcaption>
+                        <h3>Riz au poisson</h3>
+                        <span class="orange">plat</span>
+                        <span class="vert">30mn</span>
+                        <span class="bleu">facile</span>
+                        <button>Voir la recette</button>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
     </main>
-
+    
+    <!-- Footer contenant les informations de navigation et à propos -->
     <footer>
         <div class="foot">
+            <!-- Section de navigation -->
             <section>
                 <h1>Navigation</h1>
-               
-                    <ul>
-                        <li><a href="index.html">Acceuil </a></li>
-                        <li><a href="recette.html">Ajouter une recette</a></li>
-                        <li><a href="favoris.html">Mes favoris</a></li>
-                        <li><a href="a-propos.html">A propos</a></li>
-                       
-                    </ul>
-                
-                  
-
+                <ul>
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="recette.html">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Mes favoris</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                </ul>
             </section>
+    
+            <!-- Section à propos de GourmeTech -->
             <section>
-
                 <h2>Apropos GourmeTech</h2>
                 <p>GourmeTech est une plateforme de recettes cullinaires interactives developpés dans le cadre d'un projet pedagogique</p>
             </section>
         </div>
+        <!-- Informations de copyright -->
         <div class="last">
             <p> @2025 GourmeTech-tous droits reservés</p>
         </div>
-       
     </footer>
     
-</body>
-</html>
+    </body>
+    </html>
+    

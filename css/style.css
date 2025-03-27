@@ -1,28 +1,30 @@
 :root{
-
-    --primary-color:#E67F22;
-    --secondary-color:#f9f9f9;
-    --bolder : 700;
-    font-size:16px ;
+    --primary-color:#E67F22; /* Définition de la couleur principale */
+    --secondary-color:#f9f9f9; /* Définition de la couleur secondaire */
+    --bolder : 700; /* Poids de police plus gras */
+    font-size:16px; /* Taille de police de base */
 }
 
+/* Application du box-sizing pour tous les éléments afin de gérer la taille des boîtes */
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
     padding: 0;
-
     margin: 0;
 }
+
+/* Style général du body avec une couleur de fond blanche et texte noir */
 body {
     background-color: white;
     color: black;
 }
 
-
+/* Mode sombre (dark-theme) */
 body.dark-theme {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Fond sombre */
+    color: white; /* Texte clair */
 }
 
+/* Apparence de l'icône de la lune et du soleil */
 .moon {
     display: block;
 }
@@ -31,334 +33,293 @@ body.dark-theme {
 }
 
 .dark-theme .moon {
-    display: none;
+    display: none; /* Masquer la lune en mode sombre */
 }
 
 .dark-theme .sun {
-    display: block;
+    display: block; /* Afficher le soleil en mode sombre */
 }
 
+/* Images prenant toute la largeur du parent avec un remplissage adaptatif */
 img{
     width: 100%;
-   
-    object-fit: cover;
+    object-fit: cover; /* Remplissage de l'image */
     vertical-align: middle;
-    
 }
 
+/* En-tête (header) avec disposition flexible, espace entre les éléments et ombre légère */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
     padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'en-tête */
     position: relative;
 
   .moon, #sun-icon {
-        transform: rotate(-100deg);
+        transform: rotate(-100deg); /* Rotation des icônes */
         width: 40px;
         height: 40px;
         padding: 10px;
         position: absolute;
         top: 40%;
-       right: 17%;
-       color: #F3D36B;
-       border: 2px solid var(--secondary-color);
-       border-radius: 50%;
-       background-color: var(--secondary-color) ;
-       transition: all 0.3s ease;
-       
-
-       
-     
-       
-       
+        right: 17%; /* Positionnement des icônes */
+        color: #F3D36B; /* Couleur dorée pour les icônes */
+        border: 2px solid var(--secondary-color);
+        border-radius: 50%; /* Forme circulaire */
+        background-color: var(--secondary-color);
+        transition: all 0.3s ease; /* Transition fluide */
     }
-    
-    }
+}
 
-    nav{
-        display: none;
-        list-style: none;
-    }
-    span{
-        font-weight: bolder;
-        margin-left: 20px;
-        color: var(--primary-color);
-    }
+/* Navigation masquée par défaut */
+nav{
+    display: none;
+    list-style: none;
+}
 
+/* Espacement et couleur pour les éléments en span */
+span{
+    font-weight: bolder;
+    margin-left: 20px;
+    color: var(--primary-color); /* Couleur principale */
+}
 
-
+/* Liens sans soulignement dans l'en-tête */
 header a{
     text-decoration: none;
 }
-.first{  width: 80%;
-    margin:auto;
+
+/* Largeur et marges pour la première section */
+.first{
+    width: 80%;
+    margin: auto;
     margin-bottom: 30px;
 }
 
-#text{ width: 100%; margin:auto;
-
+/* Style pour le texte au centre de la page */
+#text{
+    width: 100%; 
+    margin: auto;
     text-align: center;
     margin-bottom: 5px;
     padding: 10px;
-
-
-
-
-
-  
-
-}
-.button{ width: 100%;
-    background-color: var(--primary-color);
-
 }
 
+/* Boutons avec couleur de fond primaire */
+.button{
+    width: 100%;
+    background-color: var(--primary-color); /* Couleur primaire */
+}
+
+/* Sections 2 et 3 avec un fond secondaire, bordure et ombre */
 .section2, .section3{
     background-color: var(--secondary-color);
-
     border: 1px solid white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre autour de la section */
     margin-block: 10px;
-    input{
-        margin: 15px;
-    }
 }
 
-figure{
-    position: relative;
+/* Espacement des champs de saisie dans les sections */
+input{
+    margin: 15px;
+}
 
-   
+/* Mise en forme des légendes d'images */
+figcaption{
+    margin-block: 20px;
+    margin-left: 15px;
 
-
-    }
-
-
-
-figcaption{margin-block: 20px;
-    
-
-    margin-left:15px ;
     h3{
         margin-bottom: 5px;
     }
+
+    /* Styles pour les étiquettes (orange, vert, bleu) */
     .orange{
         background-color: var(--primary-color);
         color: var(--secondary-color);
         border: 2px var(--primary-color) solid;
         border-radius: 30%;
         padding-inline: 10px;
-        margin:5px
-        
+        margin: 5px;
     }
+
     .vert{
-        background-color:#2BCD70 ;
+        background-color: #2BCD70;
         color: var(--secondary-color);
         border-radius: 30%;
         padding-inline: 10px;
         margin: 5px;
+    }
 
-        
-
-
-}
-.bleu {
-    background-color: #3498D8;
-    color: var(--secondary-color);
+    .bleu{
+        background-color: #3498D8;
+        color: var(--secondary-color);
         border-radius: 30%;
         padding-inline: 10px;
         margin: 5px;
+    }
 }
 
-}
- 
- .heart{
+/* Icône en forme de cœur positionnée en haut à droite des figures */
+.heart{
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 50px;  
-    height: 50px; 
-    border: 2px solid  var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--secondary-color);
     border-radius: 50%;
     padding: 10px;
-    background-color: var(--secondary-color); 
-
+    background-color: var(--secondary-color);
 }
 
+/* Style des boutons dans les figures */
 figure button{
     width: 80%;
     margin: auto;
     text-align: center;
-    border:2px var(--primary-color) solid ;
+    border: 2px var(--primary-color) solid;
     margin-block: 10px;
     background-color: var(--primary-color);
-
- 
-
-   
-  
-
 }
-footer{
 
-    .last{background-color: black;
-        color: var(--secondary-color);
-        text-align: center;
-        padding: 10px;
+/* Footer : dernière section avec fond noir et texte clair */
+footer .last{
+    background-color: black;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+}
 
+/* Masquer les éléments foot par défaut */
+.foot{
+    display: none;
+}
+
+/* Largeur de la première section */
+.first{
+    width: 80%;
+    margin: auto;
+}
+
+/* Disposition flexible pour la section 1 avec texte et bouton */
+.section1{
+    display: flex;
+    #text{
+        width: 70%;
     }
- 
+    .button{
+        width: 30%;
     }
+}
 
-    .foot{
-        display:none
-      }
+/* Sections 2 et 3 avec largeur 100% et marges automatiques */
+.section2, .section3{
+    width: 100%;
+    margin: auto;
+    margin-block: 10px;
+}
 
-  
+/* Styles pour les titres h1 et h2 dans les sections */
+h1, h2 {
+    font-size: 16px;
+}
 
-
-
-
- 
-
-
-
-    .first{
-        width: 80%;
-        margin: auto;
-
-    }
-    
-    .section1{
-        display:flex;
-        #text{ 
-            width: 70%;
-            
-
-        }
-        .button{
-            width:30%;
-            
-        }
-    }
-
-    .section2, .section3{
-        width: 100%;
-        margin: auto;
-        margin-block: 10px;
-
-        h1, h2 {
-           
-            font-size: 16px;
-        }
-
-        
-
-
-    }
-
-.check3,.check2, .check1{
+/* Alignement des éléments checkboxes */
+.check3, .check2, .check1{
     display: inline-flex;
 }
 
+/* Grid layout pour la section 4 */
+.sect4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
+/* Style des figures dans la section 4 avec ombre et bordures arrondies */
+figure{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
-    .sect4{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-
-        figure{
-            box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-    }
-
-    
-
-
+/* Layout responsif pour les grands écrans (plus de 1024px) */
 @media screen and (min-width: 1024px) {
     header{
         position: relative;
     }
-     .menu {
-        display: flex;              
-        justify-content:center; 
+
+    /* Menu affiché sur les écrans larges */
+    .menu {
+        display: flex;
+        justify-content: center;
         align-items: center;
         padding: 0;
-       
-        list-style: none;  
-        width: 50%;  
-        margin: auto;   
+        list-style: none;
+        width: 50%;
+        margin: auto;
+    }
 
+    /* Liens dans le menu sous forme de liste horizontale */
+    li {
+        display: inline;
     }
-    
-     li {
-        display: inline;            
+
+    li a {
+        text-decoration: none;
+        padding: 10px 15px;
+        color: black;
     }
-    
-     li a {
-        text-decoration: none;      
-        padding: 10px 15px; 
-        color: black;        
-                    
-    }
+
+    /* Cacher le menu burger */
     .burger{
         display: none;
     }
+
+    /* Mise en forme des recettes sous forme de grille */
     .recette { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        
         gap: 1rem;
         width: 70%;
-         
+    }
+
+    /* Disposition en grille pour les checkboxes */
+    .check1, .check2, .check3{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    /* Mise en forme de la section 4 avec une grille à 3 colonnes */
+    .sect4{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Footer avec grille à 2 colonnes */
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Titres du footer */
+    .foot h1, .foot h2 {
+        color: var(--primary-color);
+    }
+
+    /* Liste des éléments du footer */
+    .foot ul {
+        padding: 0;
+    }
+
+    .foot li {
+        display: block;
+        list-style: none;
+        margin-bottom: 5px;
+    }
 }
-
-.check1, .check2, .check3{
-    display:grid;
-    grid-template-rows: auto;
-    
-}
-
- 
-  
-
-
-  
-
- .sect4{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- }
-
- .foot {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 10px;
-}
-
-.foot h1, 
-.foot h2 {
-    color: var(--primary-color);
-}
-
-.foot ul {
-    padding: 0;
-}
-
-.foot li {
-    display: block;
-    list-style: none;
-    margin-bottom: 5px;
-}
-}
-
-
-
-
