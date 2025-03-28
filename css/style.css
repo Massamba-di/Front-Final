@@ -200,6 +200,9 @@ footer .last{
 .foot{
     display: none;
 }
+@media screen and (min-width: 768px){
+    
+
 
 /* Largeur de la première section */
 .first{
@@ -247,6 +250,7 @@ figure{
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 10px;
+}
 }
 
 /* Layout responsif pour les grands écrans (plus de 1024px) */
